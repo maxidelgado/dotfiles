@@ -187,7 +187,11 @@ require('lazy').setup({
     event = "InsertEnter",
     config = function() require("nvim-autopairs").setup {} end
   },
-
+  {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+  },
   { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     dependencies = {
