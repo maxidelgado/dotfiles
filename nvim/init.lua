@@ -1,4 +1,5 @@
 require('keymaps')
+require('custom-keymaps')
 require('plugins.lazy')
 require('plugins.misc')
 require('plugins.lualine')
@@ -15,5 +16,6 @@ require('plugins.zenmode')
 require('plugins.neogit')
 require('plugins.codesnap')
 require('plugins.harpoon')
+require('plugins.conform')
 
 -- vim: ts=8 sts=2 sw=2 et
