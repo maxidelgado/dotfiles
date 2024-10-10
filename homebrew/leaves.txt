@@ -10,11 +10,9 @@ btop
 caffix/amass/amass
 cmake
 cmatrix
-dog
 duf
 dust
 eksctl
-exa
 fd
 flyctl
 fzf
