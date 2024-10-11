@@ -31,7 +31,7 @@
       nixpkgs.hostPlatform = "aarch64-darwin";
       security.pam.enableSudoTouchIdAuth = true;
 
-      users.users.{$USERNAME}.home = "/Users/{$USERNAME}";
+      users.users.${USERNAME}.home = "/Users/${USERNAME}";
       home-manager.backupFileExtension = "backup";
       nix.configureBuildUsers = true;
       nix.useDaemon = true;
@@ -65,7 +65,7 @@
         home-manager.darwinModules.home-manager {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.{$USERNAME} = import ./home.nix;
+          home-manager.users.${USERNAME} = import ./home.nix;
         }
       ];
     };
