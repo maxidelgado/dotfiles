@@ -1,4 +1,8 @@
 # Path to your oh-my-zsh installation.
+export GOPATH='/Users/maxi/go'
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/omer/.vimpkg/bin:${GOPATH}/bin:/Users/maxi/.cargo/bin
+export PATH=/opt/homebrew/bin:$PATH
+
 # Reevaluate the prompt string each time it's displaying a prompt
 setopt prompt_subst
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
