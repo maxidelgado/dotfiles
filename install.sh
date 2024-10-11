@@ -11,11 +11,8 @@ log() {
 # Get the current user using the whoami command
 current_user=$(whoami)
 
-# Define the folder to search in (can be passed as an argument or hardcoded)
-folder_path="/path/to/your/folder"  # Replace with your folder path
-
 # Find and replace ${USERNAME} in all files within the folder
-find "$folder_path" -type f -exec sed -i "s/\${USERNAME}/$current_user/g" {} +
+find "." -type f -exec sed -i "s/\${USERNAME}/$current_user/g" {} +
 
 echo "All instances of \${USERNAME} have been replaced with $current_user"
 
