@@ -57,8 +57,8 @@ require('mason').setup()
 
 -- Enable the following language servers
 -- Feel free to add/remove any LSPs that you want here. They will automatically be installed
-local servers = { 
-  'lua_ls', 'clangd', 'rust_analyzer', 'pyright', 'ts_ls', 
+local servers = {
+  'lua_ls', 'clangd', 'rust_analyzer', 'pyright', 'ts_ls',
   'gopls', 'dockerls', 'sqlls', 'yamlls' }
 
 -- Ensure the servers above are installed
@@ -78,7 +78,7 @@ for _, lsp in ipairs(servers) do
 end
 
 -- Turn on lsp status information
-require('fidget').setup()
+require('fidget').setup({})
 
 -- Example custom configuration for lua
 --
@@ -120,4 +120,3 @@ vim.api.nvim_create_autocmd('FileType', {
     })
   end,
 })
-

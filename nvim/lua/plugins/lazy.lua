@@ -181,7 +181,6 @@ require('lazy').setup({
       "rcarriga/nvim-notify",
     }
   },
-
   'ray-x/go.nvim',
   'ray-x/guihua.lua',
   { "catppuccin/nvim",         as = "catppuccin" },
