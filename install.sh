@@ -8,6 +8,16 @@ log() {
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*"
 }
 
+export LC_ALL=C
+
+# Get the current user using the whoami command
+current_user=$(whoami)
+
+# Find and replace ${USERNAME} in all files within the folder
+find "." -type f -exec sed -i '' "s/\${USERNAME}/$current_user/g" {} +
+
+echo "All instances of \${USERNAME} have been replaced with $current_user"
+
 # Check if Homebrew is installed
 if ! command -v brew &>/dev/null; then
   log "Homebrew not found. Installing Homebrew..."
