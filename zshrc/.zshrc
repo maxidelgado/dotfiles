@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
-export GOPATH='/Users/maxi/go'
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/omer/.vimpkg/bin:${GOPATH}/bin:/Users/maxi/.cargo/bin
+export GOPATH='/Users/$HOME/go'
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/omer/.vimpkg/bin:${GOPATH}/bin:/Users/$HOME/.cargo/bin
 export PATH=/opt/homebrew/bin:$PATH
 
 # Reevaluate the prompt string each time it's displaying a prompt
@@ -63,15 +63,15 @@ alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
 # GO
-export GOPATH='/Users/maxi/go'
+export GOPATH='/Users/$HOME/go'
 
 # VIM
-alias v="/Users/maxi/.nix-profile/bin/nvim"
+alias v="/Users/$HOME/.nix-profile/bin/nvim"
 
 # Nmap
 alias nm="nmap -sC -sV -oN nmap"
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/omer/.vimpkg/bin:${GOPATH}/bin:/Users/maxi/.cargo/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/omer/.vimpkg/bin:${GOPATH}/bin:/Users/$HOME/.cargo/bin
 
 alias cl='clear'
 
