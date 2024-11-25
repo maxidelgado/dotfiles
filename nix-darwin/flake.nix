@@ -57,7 +57,7 @@
     };
   in
   {
-    darwinConfigurations."mac-${username}" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations.mac-${username} = nix-darwin.lib.darwinSystem {
       system = "aarch64-darwin";
       modules = [
         configuration
@@ -70,6 +70,6 @@
     };
 
     # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations."mac-${username}".pkgs;
+    darwinPackages = self.darwinConfigurations.mac-${username}.pkgs;
   };
 }
