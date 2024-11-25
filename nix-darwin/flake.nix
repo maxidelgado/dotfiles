@@ -32,9 +32,9 @@
 
       users.users = {
         # Set user's home dynamically based on the environment variable $USER.
-        ${lib.mkIf (config.home.username != null) config.home.username} = {
+        "${toString (builtins.getEnv "USER" or "default")}" = {
           isNormalUser = true;
-          home = "/Users/${config.home.username}";
+          home = "/Users/${builtins.getEnv "USER" or "default"}";
         };
       };
 
@@ -72,7 +72,7 @@
           home-manager.useUserPackages = true;
           home-manager.users = {
             # Import the home configuration and set home username dynamically.
-            ${toString (config.home.username or "default")} = import ./home.nix;
+            ${toString (builtins.getEnv "USER" or "default")} = import ./home.nix;
           };
         }
       ];
