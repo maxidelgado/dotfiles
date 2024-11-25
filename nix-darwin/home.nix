@@ -1,30 +1,27 @@
-# home.nix
-# home-manager switch 
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
+let
+  username = builtins.getEnv "USER";
+  homeDir = "/Users/${username}";
+in
 {
-  home.username = "${USERNAME}";
-  home.homeDirectory = "/Users/${USERNAME}";
+  home.username = username;
+  home.homeDirectory = homeDir;
   home.stateVersion = "23.05"; # Please read the comment before changing.
 
-# Makes sense for user specific applications that shouldn't be available system-wide
+  # Packages specific to the user.
   home.packages = [
   ];
 
-  # Home Manager is pretty good at managing dotfiles. The primary way to manage
-  # plain files is through 'home.file'.
+  # Use a dynamic approach for managing dotfiles based on the home directory.
   home.file = {
-    ".zshrc".source = ~/dotfiles/zshrc/.zshrc;
-    ".config/wezterm".source = ~/dotfiles/wezterm;
-    ".config/skhd".source = ~/dotfiles/skhd;
-    ".config/starship".source = ~/dotfiles/starship;
-    ".config/zellij".source = ~/dotfiles/zellij;
-    ".config/nvim".source = ~/dotfiles/nvim;
-    ".config/nix".source = ~/dotfiles/nix;
-    ".config/nix-darwin".source = ~/dotfiles/nix-darwin;
-    ".config/tmux".source = ~/dotfiles/tmux;
-    ".config/ghostty".source = ~/dotfiles/ghostty;
+    ".zshrc".source = "${homeDir}/dotfiles/zshrc/.zshrc";
+    ".config/wezterm".source = "${homeDir}/dotfiles/wezterm";
+    ".config/starship".source = "${homeDir}/dotfiles/starship";
+    ".config/nvim".source = "${homeDir}/dotfiles/nvim";
+    ".config/nix".source = "${homeDir}/dotfiles/nix";
+    ".config/nix-darwin".source = "${homeDir}/dotfiles/nix-darwin";
   };
 
   home.sessionVariables = {
@@ -32,7 +29,7 @@
 
   home.sessionPath = [
     "/run/current-system/sw/bin"
-      "$HOME/.nix-profile/bin"
+    "$HOME/.nix-profile/bin"
   ];
   programs.home-manager.enable = true;
   programs.zsh = {

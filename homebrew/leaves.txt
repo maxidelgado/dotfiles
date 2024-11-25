@@ -69,3 +69,6 @@ zsh-autosuggestions
 zsh-syntax-highlighting
 atuin
 direnv
+trash-cli
+lua-language-server
+selene
