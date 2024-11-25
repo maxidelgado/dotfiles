@@ -14,7 +14,7 @@
   outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager }:
   let
     username = builtins.getEnv "USER";
-    configuration = { pkgs, lib, config, ... }: {
+    configuration = { pkgs, ... }: {
       # List packages installed in system profile.
       environment.systemPackages =
         [
@@ -31,13 +31,7 @@
       nixpkgs.hostPlatform = "aarch64-darwin";
       security.pam.enableSudoTouchIdAuth = true;
 
-      users.users = {
-        # Set user's home dynamically based on the environment variable $USER.
-        "${username}" = {
-          isNormalUser = true;
-          home = "/Users/${username}";
-        };
-      };
+      users.users.${username}.home = "/Users/${username}";
 
       home-manager.backupFileExtension = "backup";
       nix.configureBuildUsers = true;
@@ -59,7 +53,6 @@
         "wezterm"
       ];
       homebrew.brews = [
-        "imagemagick"
       ];
     };
   in
