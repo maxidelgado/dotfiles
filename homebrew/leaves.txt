@@ -72,3 +72,4 @@ direnv
 trash-cli
 lua-language-server
 selene
+go
