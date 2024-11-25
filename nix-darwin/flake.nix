@@ -14,6 +14,7 @@
   outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager }:
   let
     configuration = { pkgs, lib, config, ... }: {
+      username = builtins.getEnv "USER";
       # List packages installed in system profile.
       environment.systemPackages =
         [
@@ -32,9 +33,9 @@
 
       users.users = {
         # Set user's home dynamically based on the environment variable $USER.
-        "${builtins.getEnv "USER"}" = {
+        "${username}" = {
           isNormalUser = true;
-          home = "/Users/${builtins.getEnv "USER" or "default"}";
+          home = "/Users/${username}";
         };
       };
 
@@ -72,7 +73,7 @@
           home-manager.useUserPackages = true;
           home-manager.users = {
             # Import the home configuration and set home username dynamically.
-            ${builtins.getEnv "USER"} = import ./home.nix;
+            ${username} = import ./home.nix;
           };
         }
       ];
