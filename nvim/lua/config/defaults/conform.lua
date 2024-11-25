@@ -36,7 +36,7 @@ return {
         end,
         -- log_level = vim.log.levels.TRACE,
         formatters_by_ft = {
-          go = { "goimports", "gofmt" },
+          go = {  "gofumpt", "goimports-reviser", "golines" },
           javascript = { "prettier" },
           json = { "prettier" },
           lua = { "stylua" },
@@ -49,6 +49,26 @@ return {
           toml = { "taplo" },
           typst = { "typstfmt" },
           yaml = { "yamlfmt" },
+        },
+
+        formatters = {
+        -- Golang
+        ["goimports-reviser"] = {
+            prepend_args = { "-rm-unused" },
+        },
+        golines = {
+            prepend_args = { "--max-len=80" },
+        },
+        -- Lua
+        stylua = {
+            prepend_args = {
+                "--column-width", "80",
+                "--line-endings", "Unix",
+                "--indent-type", "Spaces",
+                "--indent-width", "4",
+                "--quote-style", "AutoPreferDouble",
+            },
+          },
         },
       },
     },
