@@ -13,8 +13,8 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager }:
   let
+    username = builtins.getEnv "USER";
     configuration = { pkgs, lib, config, ... }: {
-      username = builtins.getEnv "USER";
       # List packages installed in system profile.
       environment.systemPackages =
         [
