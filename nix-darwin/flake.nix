@@ -64,7 +64,7 @@
     };
   in
   {
-    darwinConfigurations."generic-darwin-system" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."MacBook Pro de Maximiliano" = nix-darwin.lib.darwinSystem {
       system = "aarch64-darwin";
       modules = [
         configuration
@@ -80,6 +80,6 @@
     };
 
     # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations."generic-darwin-system".pkgs;
+    darwinPackages = self.darwinConfigurations."MacBook Pro de Maximiliano".pkgs;
   };
 }
