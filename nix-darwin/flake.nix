@@ -32,7 +32,7 @@
 
       users.users = {
         # Set user's home dynamically based on the environment variable $USER.
-        "${toString (builtins.getEnv "USER" or "default")}" = {
+        "${builtins.getEnv "USER"}" = {
           isNormalUser = true;
           home = "/Users/${builtins.getEnv "USER" or "default"}";
         };
@@ -72,7 +72,7 @@
           home-manager.useUserPackages = true;
           home-manager.users = {
             # Import the home configuration and set home username dynamically.
-            ${toString (builtins.getEnv "USER" or "default")} = import ./home.nix;
+            ${builtins.getEnv "USER"} = import ./home.nix;
           };
         }
       ];
