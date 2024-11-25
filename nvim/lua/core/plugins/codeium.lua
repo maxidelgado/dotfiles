@@ -3,7 +3,7 @@ return {
     event = "InsertEnter",
     config = function()
       local map = vim.api.nvim_set_keymap
-      map('i', '<C-e>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+      map('i', '<c-e>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
 
       map('i', '<c-n>', function() return vim.fn['codeium#CycleCompletions'](1) end,
         { expr = true, silent = true })
