@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 stow .
-ln nvim/config-example.lua ~/.nvim_config.lua
-ln zshrc/.zshrc ~/.zshrc
+ln -sf ./nvim/.nvim_config.lua ~/.nvim_config.lua
+ln -sf ./zshrc/.zshrc ~/.zshrc
