@@ -40,7 +40,7 @@ return {
           anthropic = {
             disable = false,
             endpoint = "https://api.anthropic.com/v1/messages",
-            secret = {"bash", "-c", "cat $HOME/.secrets/anthropic-gp-nvm-token"},
+            secret = { "bash", "-c", "cat $HOME/.secrets/anthropic-gp-nvm-token" },
           },
         },
       },
@@ -88,7 +88,7 @@ return {
         "tutor",
         "zipPlugin",
       },
-      lockfile = "~/.lazy-lock.json"
+      lockfile = "~/.lazy-lock.json",
     },
     typst_preview = {
       enabled = true,
@@ -114,7 +114,7 @@ return {
     symbol_usage = {
       opts = {
         vt_position = "end_of_line",
-        disable = { filetypes = {"dockerfile"} },
+        disable = { filetypes = { "dockerfile" } },
       },
     },
     telescope = {
@@ -134,6 +134,9 @@ return {
       enabled = false,
     },
     codeium = {
+      enabled = true,
+    },
+    snap = {
       enabled = true,
     },
   },
