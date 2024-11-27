@@ -16,6 +16,8 @@ return {
     "ts_ls",
     "typst_lsp",
     "yamlls",
+    "docker_compose_language_service",
+    "docker-langserver",
   },
 
   tools = {
