@@ -8,6 +8,6 @@ return {
   opts = {
     save_path = "~/Pictures",
     has_breadcrumbs = true,
-    bg_theme = "bamboo",
+    bg_theme = "grape",
   },
 }
