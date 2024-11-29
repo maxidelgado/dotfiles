@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export GOPATH=$HOME/go
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.vimpkg/bin:$GOPATH/bin:$HOME/.cargo/bin
+export PATH=$HOME/.asdf/shims:$PATH
 export PATH=/opt/homebrew/bin:$PATH
 
 # Reevaluate the prompt string each time it's displaying a prompt
