@@ -1,0 +1,11 @@
+[[ssh-keys]]
+item = "Github - Personal"
+vault = "Privado"
+
+[[ssh-keys]]
+item = "Github - ASAPP"
+vault = "ASAPP"
+
+[[ssh-keys]]
+item = "Github - Lockwood"
+vault = "Trick/Lockwood"
