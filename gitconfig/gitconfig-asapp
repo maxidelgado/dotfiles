@@ -1,0 +1,6 @@
+[user]
+  name = Maximiliano Delgado
+  email = madelgado@asapp.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYaOTH1KDDF5XgdiAy1rqQuzOhshTxMTOV5wi1BNtwT
+[url "git@github.asapp.dev:"]
+  insteadOf = https://github.asapp.dev/
