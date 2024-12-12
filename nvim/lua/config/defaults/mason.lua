@@ -18,6 +18,7 @@ return {
     "yamlls",
     "docker_compose_language_service",
     "docker-langserver",
+    "graphql",
   },
 
   tools = {
