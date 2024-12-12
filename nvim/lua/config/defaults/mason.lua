@@ -49,5 +49,7 @@ return {
     "gotests",
     "iferr",
     "impl",
+    -- Graphql
+    "graphql-language-service-cli",
   },
 }
