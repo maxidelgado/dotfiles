@@ -25,6 +25,7 @@ echo "✅ Configuration files linked."
 echo "🔑 Setting up 1Password agent socket..."
 mkdir -p ~/.1password && echo "  - Ensured ~/.1password directory exists"
 ln -sf ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ~/.1password/agent.sock && echo "  - Linked 1Password agent.sock"
+ln -sf ~/dotfiles/1Password/ssh/agent.toml ~/.config/1Password/ssh/agent.toml && echo "  - Linked 1Password agent.toml"
 echo "✅ 1Password agent setup complete."
 
 echo "🎉 All tasks completed successfully!"
