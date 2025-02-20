@@ -13,7 +13,6 @@ mkdir -p ~/code/work/lockwood && echo "  - Created ~/code/work/lockwood"
 echo "✅ Code directories set up."
 
 echo "🔗 Symlinking configuration files..."
-ln -sf ~/dotfiles/nvim/.nvim_config.lua ~/.nvim_config.lua && echo "  - Linked .nvim_config.lua"
 ln -sf ~/dotfiles/zshrc/.zshrc ~/.zshrc && echo "  - Linked .zshrc"
 ln -sf ~/dotfiles/ssh/config ~/.ssh/config && echo "  - Linked SSH config"
 ln -sf ~/dotfiles/gitconfig/gitconfig ~/.gitconfig && echo "  - Linked .gitconfig"

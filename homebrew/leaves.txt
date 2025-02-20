@@ -76,3 +76,10 @@ go
 golangci-lint
 asdf
 marksman
+yazi
+ffmpeg
+sevenzip
+poppler
+imagemagick
+font-symbols-only-nerd-font
+
