@@ -1,5 +1,5 @@
-[url "git@bitbucket.org:playtowingames/"]
-  insteadOf = https://maximilianodelgado@bitbucket.org/playtowingames/
+[url "git@bitbucket.org:playtowingames"]
+  insteadOf = https://bitbucket.org/playtowingames
 
 [user]
   name = Maximiliano Delgado
