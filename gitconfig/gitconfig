@@ -7,7 +7,7 @@
 
 [includeIf "gitdir:~/code/personal/"]
   	path = .gitconfig-personal
-[includeIf "gitdir:~/code/work/lockwood"]
-  path = .gitconfig-lockwood
 [includeIf "gitdir:~/code/work/asapp"]
   path = .gitconfig-asapp
+[includeIf "gitdir:~/code/work/ptw/"]
+  path = .gitconfig-pwt

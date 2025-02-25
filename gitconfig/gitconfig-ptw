@@ -1,0 +1,7 @@
+[url "git@bitbucket.org:playtowingames/"]
+  insteadOf = https://maximilianodelgado@bitbucket.org/playtowingames/
+
+[user]
+  name = Maximiliano Delgado
+  email = maximiliano.delgado@7r1ck.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIn2JYd5nJ3KKl9ZuOBsa0AGLzdDtfX9LphFdYTy2T1L

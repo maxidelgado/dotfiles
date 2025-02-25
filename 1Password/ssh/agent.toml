@@ -7,9 +7,9 @@ item = "Github - ASAPP"
 vault = "ASAPP"
 
 [[ssh-keys]]
-item = "Github - Lockwood"
-vault = "Trick/Lockwood"
-
-[[ssh-keys]]
 item = "GitLab - Asapp"
 vault = "ASAPP"
+
+[[ssh-keys]]
+item = "Bitbucket"
+vault = "Trick"

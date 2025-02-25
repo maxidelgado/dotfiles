@@ -17,7 +17,7 @@ ln -sf ~/dotfiles/zshrc/.zshrc ~/.zshrc && echo "  - Linked .zshrc"
 ln -sf ~/dotfiles/ssh/config ~/.ssh/config && echo "  - Linked SSH config"
 ln -sf ~/dotfiles/gitconfig/gitconfig ~/.gitconfig && echo "  - Linked .gitconfig"
 ln -sf ~/dotfiles/gitconfig/gitconfig-personal ~/code/personal/.gitconfig-personal && echo "  - Linked .gitconfig-personal"
-ln -sf ~/dotfiles/gitconfig/gitconfig-lockwood ~/code/work/lockwood/.gitconfig-lockwood && echo "  - Linked .gitconfig-lockwood"
+ln -sf ~/dotfiles/gitconfig/gitconfig-ptw ~/code/work/pwt/.gitconfig-ptw && echo "  - Linked .gitconfig-ptw"
 ln -sf ~/dotfiles/gitconfig/gitconfig-asapp ~/code/work/asapp/.gitconfig-asapp && echo "  - Linked .gitconfig-asapp"
 echo "✅ Configuration files linked."
 
