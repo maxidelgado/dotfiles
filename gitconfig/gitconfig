@@ -7,9 +7,9 @@
 
 [includeIf "gitdir:~/code/personal/"]
   	path = .gitconfig-personal
-[includeIf "gitdir:~/code/work/asapp"]
+[includeIf "gitdir:~/code/work/asapp/"]
   path = .gitconfig-asapp
-[includeIf "gitdir:~/code/work/ptw"]
+[includeIf "gitdir:~/code/work/ptw/"]
   path = .gitconfig-ptw
 [pull]
 	rebase = false

@@ -144,3 +144,7 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# Asapp stuff
+export GO111MODULE=on
+export GOPRIVATE="github.asapp.dev/*,github.com/asappinc/*"
