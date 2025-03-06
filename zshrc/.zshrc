@@ -145,3 +145,7 @@ function y() {
 	rm -f -- "$tmp"
 }
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+
+# Asapp stuff
+export GO111MODULE=on
+export GOPRIVATE="github.asapp.dev/*,github.com/asappinc/*"
