@@ -144,3 +144,4 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
