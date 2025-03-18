@@ -2,13 +2,3 @@
   name = Maximiliano Delgado
   email = madelgado@asapp.com
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYaOTH1KDDF5XgdiAy1rqQuzOhshTxMTOV5wi1BNtwT
-[url "ssh://git@github.com/asappinc"]
-        insteadOf = https://github.com/asappinc
-[url "ssh://git@github.com/asappinc"]
-        insteadOf = https://github.com/ASAPPinc
-[url "ssh://git@github.asapp.dev/"]
-        insteadOf = https://github.asapp.dev/
-[url "ssh://git@github.asapp.dev"]
-        insteadOf = https://github.asapp.dev
-[url "git@gitlab.com:asappinc"]
-  insteadOf = https://gitlab.com/asappinc

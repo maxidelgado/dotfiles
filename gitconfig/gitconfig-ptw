@@ -1,6 +1,3 @@
-[url "git@bitbucket.org:playtowingames"]
-  insteadOf = https://bitbucket.org/playtowingames
-
 [user]
   name = Maximiliano Delgado
   email = maximiliano.delgado@7r1ck.com
