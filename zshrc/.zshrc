@@ -54,11 +54,11 @@ alias gr='git remote'
 alias gre='git reset'
 
 # Docker
-alias dco="docker compose"
-alias dps="docker ps"
-alias dpa="docker ps -a"
-alias dl="docker ps -l -q"
-alias dx="docker exec -it"
+alias dco="podman-compose"
+alias dps="podman ps"
+alias dpa="podman ps -a"
+alias dl="podman ps -l -q"
+alias dx="podman exec -it"
 
 # Dirs
 alias ..="cd .."
