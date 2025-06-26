@@ -27,4 +27,8 @@ ln -sf ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ~/.1pas
 ln -sf ~/dotfiles/1Password/ssh/agent.toml ~/.config/1Password/ssh/agent.toml && echo "  - Linked 1Password agent.toml"
 echo "✅ 1Password agent setup complete."
 
+echo "🚀 Setting up Mouse Mover..."
+~/dotfiles/mover/install.sh
+echo "✅ Mouse Mover setup complete."
+
 echo "🎉 All tasks completed successfully!"
